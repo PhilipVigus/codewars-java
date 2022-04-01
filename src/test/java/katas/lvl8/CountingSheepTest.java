@@ -27,4 +27,9 @@ class CountingSheepTest {
   void countsTwoSheepTest() {
     assertEquals("1 sheep...2 sheep...", countingSheep.countingSheep(2));
   }
+
+  @Test
+  void countsThreeSheepTest() {
+    assertEquals("1 sheep...2 sheep...3 sheep...", countingSheep.countingSheep(3));
+  }
 }
