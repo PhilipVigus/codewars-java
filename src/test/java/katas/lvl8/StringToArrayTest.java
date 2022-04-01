@@ -24,4 +24,11 @@ class StringToArrayTest {
     String[] expectedResult = new String[] {"Robin", "Singh"};
     assertArrayEquals(expectedResult, stringToArray.stringToArray("Robin Singh"));
   }
+
+  @Test
+  void returnsCorrectArrayForStringWithLotsOfWordsTest() {
+    String[] expectedResult = new String[] {"I", "love", "arrays", "they", "are", "my", "favorite"};
+    assertArrayEquals(
+        expectedResult, stringToArray.stringToArray("I love arrays they are my favorite"));
+  }
 }
