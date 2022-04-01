@@ -3,7 +3,7 @@ package katas.lvl8;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CharProblemTest {
   CharProblem charProblem;
@@ -21,5 +21,10 @@ class CharProblemTest {
   @Test
   void returns9WhenTheAgeIs9() {
     assertEquals(9, charProblem.howOld("9 years old"));
+  }
+
+  @Test
+  void returns9WhenTheAgeIs1() {
+    assertEquals(1, charProblem.howOld("1 years old"));
   }
 }
