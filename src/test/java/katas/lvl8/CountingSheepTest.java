@@ -14,7 +14,12 @@ class CountingSheepTest {
   }
 
   @Test
-  void countsZeroSheep() {
+  void countsZeroSheepTest() {
     assertEquals("", countingSheep.countingSheep(0));
+  }
+
+  @Test
+  void countsOneSheepTest() {
+    assertEquals("1 sheep...", countingSheep.countingSheep(1));
   }
 }
