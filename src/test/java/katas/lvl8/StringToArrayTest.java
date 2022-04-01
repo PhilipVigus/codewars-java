@@ -18,4 +18,10 @@ class StringToArrayTest {
     String[] expectedResult = new String[] {};
     assertArrayEquals(expectedResult, stringToArray.stringToArray(""));
   }
+
+  @Test
+  void returnsCorrectArrayForStringWithTwoWordsTest() {
+    String[] expectedResult = new String[] {"Robin", "Singh"};
+    assertArrayEquals(expectedResult, stringToArray.stringToArray("Robin Singh"));
+  }
 }
