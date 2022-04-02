@@ -16,7 +16,13 @@ class DigitsExplosionTest {
 
   @Test
   @DisplayName("It explodes the string 312 correctly")
-  void itExplodesTheString312() {
+  void itExplodesTheString312Test() {
     assertEquals("333122", digitsExplosion.explode("312"));
+  }
+
+  @Test
+  @DisplayName("It explodes the string 0 correctly")
+  void itExplodesTheString0Test() {
+    assertEquals("", digitsExplosion.explode("0"));
   }
 }
