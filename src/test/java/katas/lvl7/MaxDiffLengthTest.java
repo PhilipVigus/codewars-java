@@ -37,4 +37,14 @@ class MaxDiffLengthTest {
     String[] a2 = new String[] {};
     assertEquals(-1, maxDiffLength.maxDiffLength(a1, a2));
   }
+
+  @Test
+  @DisplayName("It returns the correct number when two non-empty arrays are passed in")
+  void itReturnsCorrectlyForTwoNonEmptyArrays()
+  {
+    String[] a1 = new String[]{"hoqq", "bbllkw", "oox", "ejjuyyy", "plmiis", "xxxzgpsssa", "xxwwkktt", "znnnnfqknaz", "qqquuhii", "dvvvwz"};
+    String[] a2 = new String[]{"cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"};
+
+    assertEquals(13, maxDiffLength.maxDiffLength(a1, a2));
+  }
 }
