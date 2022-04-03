@@ -19,4 +19,10 @@ class SpacifyTest {
   void itExpandsTheEmptyStringCorrectly() {
     assertEquals("", spacify.spacify(""));
   }
+
+  @Test
+  @DisplayName("It expands a nonempty string correctly")
+  void itExpandsANonEmptyStringCorrectly() {
+    assertEquals("a b c", spacify.spacify("abc"));
+  }
 }
