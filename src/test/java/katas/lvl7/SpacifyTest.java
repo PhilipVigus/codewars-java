@@ -25,4 +25,10 @@ class SpacifyTest {
   void itExpandsANonEmptyStringCorrectly() {
     assertEquals("a b c", spacify.spacify("abc"));
   }
+
+  @Test
+  @DisplayName("It expands a string with spaces and numbers")
+  void itExpandsStringWithSpacesAndNumbersCorrectly() {
+    assertEquals("1 2 3   4 5 a", spacify.spacify("123 45a"));
+  }
 }
