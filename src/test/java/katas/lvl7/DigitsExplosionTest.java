@@ -25,4 +25,10 @@ class DigitsExplosionTest {
   void itExplodesTheString0Test() {
     assertEquals("", digitsExplosion.explode("0"));
   }
+
+  @Test
+  @DisplayName("It explodes the string 0 correctly")
+  void itExplodesTheString123Test() {
+    assertEquals("122333", digitsExplosion.explode("123"));
+  }
 }
