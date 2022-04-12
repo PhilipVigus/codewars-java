@@ -14,26 +14,42 @@ class TwoSumTest {
   }
 
   @Test
-  void itReturnsTheCorrectSolutionForATwoNumberArray() {
+  void itBruteReturnsTheCorrectSolutionForATwoNumberArray() {
     int[] expectedSolution = {0, 1};
     int[] input = {3, 3};
 
-    assertArrayEquals(expectedSolution, twoSum.twoSum(input, 6));
+    assertArrayEquals(expectedSolution, twoSum.twoSumBruteForce(input, 6));
   }
 
   @Test
-  void itReturnsTheCorrectSolutionForAThreeNumberArray() {
+  void itBruteReturnsTheCorrectSolutionForAThreeNumberArray() {
     int[] expectedSolution = {1, 2};
     int[] input = {3, 2, 4};
 
-    assertArrayEquals(expectedSolution, twoSum.twoSum(input, 6));
+    assertArrayEquals(expectedSolution, twoSum.twoSumBruteForce(input, 6));
   }
 
   @Test
-  void itReturnsTheCorrectSolutionForAFourNumberArray() {
+  void itBruteReturnsTheCorrectSolutionForAFourNumberArray() {
     int[] expectedSolution = {0, 1};
     int[] input = {2, 7, 11, 15};
 
-    assertArrayEquals(expectedSolution, twoSum.twoSum(input, 9));
+    assertArrayEquals(expectedSolution, twoSum.twoSumBruteForce(input, 9));
+  }
+
+  @Test
+  void itEfficientlyReturnsTheCorrectSolutionForATwoNumberArray() {
+    int[] expectedSolution = {0, 1};
+    int[] input = {3, 3};
+
+    assertArrayEquals(expectedSolution, twoSum.twoSumEfficient(input, 6));
+  }
+
+  @Test
+  void itEfficientlyReturnsTheCorrectSolutionForAFourNumberArray() {
+    int[] expectedSolution = {0, 1};
+    int[] input = {2, 7, 11, 15};
+
+    assertArrayEquals(expectedSolution, twoSum.twoSumEfficient(input, 9));
   }
 }
