@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.twosum;
 
 public class TwoSum {
   public int[] twoSumBruteForce(int[] nums, int target) {
@@ -22,7 +22,7 @@ public class TwoSum {
       sum = nums[leftPointer] + nums[rightPointer];
 
       if (sum == target) {
-        return new int[]{leftPointer, rightPointer};
+        return new int[] {leftPointer, rightPointer};
       }
 
       if (sum > target) {
@@ -32,6 +32,6 @@ public class TwoSum {
       }
     }
 
-    return new int[]{-1, -1};
+    return new int[] {-1, -1};
   }
 }
